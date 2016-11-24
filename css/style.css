@@ -1,0 +1,197 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: 'Rubik','Montserrat', sans-serif;
+  color: #373a3c;
+  overflow-x: hidden;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.004);
+  background-color:#fff;
+
+}
+
+body {
+  -webkit-backface-visibility: hidden;
+}
+body {
+  margin: 0;
+}
+body {
+  line-height: 1;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline:none !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+      display: inline-flex;
+    vertical-align: middle;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+
+
+
+.main-container {
+  height: 100%;
+  margin: 0px;
+}
+
+
+
+
+
+.login-container {
+  position:relative;
+  margin: 3% auto;
+}
+
+
+.profile {
+  text-align: center;
+}
+
+.profile div {
+  margin: 0 auto;
+}
+
+.profile img {
+  width: 108px;
+  height: 108px;
+}
+
+
+.profile .displayname {
+  margin: 18px auto;
+  font-size: 1.6em;
+  color: #555;
+}
+
+
+.profile .preference {
+  font-size: 2.1em;
+  line-height: 2.2em;
+}
+
+.profile .preference input {
+  max-width: 160px;
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 1.2em;
+}
+
+
+.frame-1 .btn {
+  display: block;
+  margin: 30px;
+  box-shadow: 0 1px 3px 0 hsla(0,0%,81%,.45);
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 27px;
+}
+
+
+.preference .btn {
+  display:inline;
+  max-width: 160px;
+  margin: 3px;
+  color: #333;
+  text-transform: none;
+  padding: 6px 12px 6px 12px;
+  background-color: #e0f7fa;
+}
+
+.dropdown-content li a {
+  font-size: 1em;
+
+}
+
+.frame-1 .email-login .sign-in {
+  background-color: #16c98d;
+  color: #fff;
+  font-size: 1.2em;
+}
+.frame-1 .email-login .sign-in:hover {
+  background-color: #07a973;
+}
+
+.frame-1 .email-login .sign-up {
+  background-color: #fff;
+  color: #16c98d;
+  border: 1px solid #16c98d;
+  font-size: 1.2em;
+}
+.frame-1 .email-login .sign-up:hover {
+  background-color: #16c98d;
+  color: #fff;
+}
+
+
+.frame-1  .seperate {
+  text-align: center;
+  font-size: 1em;
+  color: #999;
+  margin: 0px 18px 36px 18px;
+}
+
+
+
+
+
+
+
+[ui-view] {
+  z-index: 1;
+  position: relative;
+  left: -900px;
+  -webkit-animation: slide 0.5s forwards;
+  animation: slide 0.5s forwards;
+}
+
+@-webkit-keyframes slide {
+    100% { left:0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+
+
+@media only screen and (max-width: 600px){
+  .main-container {
+    height: 30vh;
+  }
+
+
+}
